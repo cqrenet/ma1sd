@@ -14,7 +14,7 @@ public class AcceptTermsHandler extends BasicHttpHandler {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AcceptTermsHandler.class);
 
-    public static final String PATH = "/_matrix/identity/v2/terms";
+    public static final String PATH = "/_matrix/identity/v3/terms";
 
     private final AccountManager accountManager;
 

@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class GetTermsHandler extends BasicHttpHandler {
 
-    public static final String PATH = "/_matrix/identity/v2/terms";
+    public static final String PATH = "/_matrix/identity/v3/terms";
 
     private final JsonObject policyResponse;
 

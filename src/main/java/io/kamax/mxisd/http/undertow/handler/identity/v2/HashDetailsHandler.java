@@ -9,7 +9,7 @@ import io.undertow.server.HttpServerExchange;
 
 public class HashDetailsHandler extends BasicHttpHandler {
 
-    public static final String PATH = "/_matrix/identity/v2/hash_details";
+    public static final String PATH = "/_matrix/identity/v3/hash_details";
 
     private final HashManager hashManager;
 

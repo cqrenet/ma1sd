@@ -22,7 +22,7 @@ package io.kamax.mxisd.http;
 
 public class IsAPIv2 {
 
-    public static final String Base = "/_matrix/identity/v2";
+    public static final String Base = "/_matrix/identity/v3";
 
     public static String getValidate(String medium, String sid, String secret, String token) {
         return String.format("%s/validate/%s/submitToken?sid=%s&client_secret=%s&token=%s", Base, medium, sid, secret, token);

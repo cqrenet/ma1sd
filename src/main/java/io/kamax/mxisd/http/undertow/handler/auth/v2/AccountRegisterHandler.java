@@ -32,7 +32,7 @@ import java.util.Date;
 
 public class AccountRegisterHandler extends BasicHttpHandler {
 
-    public static final String Path = "/_matrix/identity/v2/account/register";
+    public static final String Path = "/_matrix/identity/v3/account/register";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AccountRegisterHandler.class);
 

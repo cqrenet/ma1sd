@@ -29,7 +29,7 @@ import org.slf4j.LoggerFactory;
 
 public class AccountLogoutHandler extends BasicHttpHandler {
 
-    public static final String Path = "/_matrix/identity/v2/account/logout";
+    public static final String Path = "/_matrix/identity/v3/account/logout";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AccountLogoutHandler.class);
 
