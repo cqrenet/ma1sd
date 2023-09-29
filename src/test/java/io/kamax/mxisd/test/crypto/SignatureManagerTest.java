@@ -93,7 +93,7 @@ public class SignatureManagerTest {
 
         JsonObject o = new JsonObject();
         o.addProperty("method", "GET");
-        o.addProperty("uri", "/_matrix/federation/v1/query/directory?room_alias=%23a%3Amxhsd.local.kamax.io%3A8447");
+        o.addProperty("uri", "/_matrix/federation/v3/query/directory?room_alias=%23a%3Amxhsd.local.kamax.io%3A8447");
         o.addProperty("origin", "synapse.local.kamax.io");
         o.addProperty("destination", "mxhsd.local.kamax.io:8447");
 

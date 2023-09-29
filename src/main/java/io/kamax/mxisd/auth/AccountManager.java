@@ -70,7 +70,7 @@ public class AccountManager {
         String homeserverURL = homeserverTarget.getUrl().toString();
         LOGGER.info("Domain resolved: {} => {}", matrixServerName, homeserverURL);
         HttpGet getUserInfo = new HttpGet(
-            homeserverURL + "/_matrix/federation/v1/openid/userinfo?access_token=" + openIdToken.getAccessToken());
+            homeserverURL + "/_matrix/federation/v3/openid/userinfo?access_token=" + openIdToken.getAccessToken());
         String userId;
         try (CloseableHttpClient httpClient = HttpClients.custom()
             .setSSLHostnameVerifier(new HomeserverVerifier(homeserverTarget.getDomain())).build()) {

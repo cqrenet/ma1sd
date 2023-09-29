@@ -300,7 +300,7 @@ public class SessionManager {
 
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("method", "POST");
-        jsonObject.addProperty("uri", "/_matrix/identity/api/v1/3pid/unbind");
+        jsonObject.addProperty("uri", "/_matrix/identity/api/v3/3pid/unbind");
         jsonObject.addProperty("origin", origin);
         jsonObject.addProperty("destination_is", domain);
         jsonObject.add("content", reqData);

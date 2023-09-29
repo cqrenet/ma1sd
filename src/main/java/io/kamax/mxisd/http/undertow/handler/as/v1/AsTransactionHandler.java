@@ -28,7 +28,7 @@ import java.util.LinkedList;
 public class AsTransactionHandler extends ApplicationServiceHandler {
 
     public static final String ID = "txnId";
-    public static final String Path = "/_matrix/app/v1/transactions/{" + ID + "}";
+    public static final String Path = "/_matrix/app/v3/transactions/{" + ID + "}";
 
     private final AppSvcManager app;
 

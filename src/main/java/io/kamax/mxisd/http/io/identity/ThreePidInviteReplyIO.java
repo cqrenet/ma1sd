@@ -54,7 +54,7 @@ public class ThreePidInviteReplyIO {
         private String public_key;
 
         public Key(String key, String publicUrl) {
-            this.key_validity_url = publicUrl + "/_matrix/identity/api/v1/pubkey/isvalid";
+            this.key_validity_url = publicUrl + "/_matrix/identity/api/v3/pubkey/isvalid";
             this.public_key = key;
         }
 

@@ -28,7 +28,7 @@ import java.util.LinkedList;
 public class AsUserHandler extends ApplicationServiceHandler {
 
     public static final String ID = "userId";
-    public static final String Path = "/_matrix/app/v1/users/{" + ID + "}";
+    public static final String Path = "/_matrix/app/v3/users/{" + ID + "}";
 
     private final AppSvcManager app;
 

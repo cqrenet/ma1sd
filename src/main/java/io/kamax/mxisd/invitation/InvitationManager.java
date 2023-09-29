@@ -449,7 +449,7 @@ public class InvitationManager {
 
         // TODO this is needed as this will block if called during authentication cycle due to synapse implementation
         new Thread(() -> { // FIXME need to make this retry-able and within a general background working pool
-            HttpPost req = new HttpPost(hsUrlOpt.getUrl().toString() + "/_matrix/federation/v1/3pid/onbind");
+            HttpPost req = new HttpPost(hsUrlOpt.getUrl().toString() + "/_matrix/federation/v3/3pid/onbind");
             // Expected body: https://matrix.to/#/!HUeDbmFUsWAhxHHvFG:matrix.org/$150469846739DCLWc:matrix.trancendances.fr
             JsonObject obj = new JsonObject();
             obj.addProperty("mxid", mxid);

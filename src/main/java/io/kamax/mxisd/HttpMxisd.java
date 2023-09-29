@@ -134,7 +134,7 @@ public class HttpMxisd {
 
             // Application Service endpoints
             .get(AsUserHandler.Path, asUserHandler)
-            .get("/_matrix/app/v1/rooms/**", asNotFoundHandler)
+            .get("/_matrix/app/v3/rooms/**", asNotFoundHandler)
             .put(AsTransactionHandler.Path, asTxnHandler)
 
             .get("/users/{" + AsUserHandler.ID + "}", asUserHandler) // Legacy endpoint
