@@ -319,7 +319,7 @@ public class SessionManager {
     private void validateServerKey(String key, String signature, String canonical,
                                    HomeserverFederationResolver.HomeserverTarget homeserverTarget) {
         String originUrl = homeserverTarget.getUrl().toString();
-        HttpGet request = new HttpGet(originUrl + "/_matrix/key/v2/server");
+        HttpGet request = new HttpGet(originUrl + "/_matrix/key/v3/server");
         log.info("Get keys from the server {}", request.getURI());
         try (CloseableHttpClient httpClient = HttpClients.custom()
             .setSSLHostnameVerifier(new HomeserverVerifier(homeserverTarget.getDomain())).build()) {
