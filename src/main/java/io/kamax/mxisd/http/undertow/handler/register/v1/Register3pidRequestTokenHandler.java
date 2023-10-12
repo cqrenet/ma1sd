@@ -38,7 +38,7 @@ import org.slf4j.LoggerFactory;
 public class Register3pidRequestTokenHandler extends BasicHttpHandler {
 
     public static final String Key = "medium";
-    public static final String Path = "/_matrix/client/r0/register/{" + Key + "}/requestToken";
+    public static final String Path = "/_matrix/client/v3/register/{" + Key + "}/requestToken";
 
     private static final Logger log = LoggerFactory.getLogger(Register3pidRequestTokenHandler.class);
 

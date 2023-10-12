@@ -31,7 +31,7 @@ import java.net.URI;
 
 public class UserDirectorySearchHandler extends HomeserverProxyHandler {
 
-    public static final String Path = "/_matrix/client/r0/user_directory/search";
+    public static final String Path = "/_matrix/client/v3/user_directory/search";
 
     private DirectoryManager mgr;
 

@@ -34,7 +34,7 @@ import java.util.Optional;
 public class ProfileHandler extends HomeserverProxyHandler {
 
     public static final String UserID = "userId";
-    public static final String Path = "/_matrix/client/r0/profile/{" + UserID + "}";
+    public static final String Path = "/_matrix/client/v3/profile/{" + UserID + "}";
 
     protected ProfileManager mgr;
 

@@ -44,7 +44,7 @@ import java.util.Optional;
 
 public class RoomInviteHandler extends BasicHttpHandler {
 
-    public static final String Path = "/_matrix/client/r0/rooms/{roomId}/invite";
+    public static final String Path = "/_matrix/client/v3/rooms/{roomId}/invite";
 
     private static final Logger log = LoggerFactory.getLogger(RoomInviteHandler.class);
 
@@ -62,7 +62,7 @@ public class RoomInviteHandler extends BasicHttpHandler {
     public void handleRequest(HttpServerExchange exchange) {
         String accessToken = getAccessToken(exchange);
 
-        String whoamiUri = dns.transform(URI.create(exchange.getRequestURL()).resolve(URI.create("/_matrix/client/r0/account/whoami"))).toString();
+        String whoamiUri = dns.transform(URI.create(exchange.getRequestURL()).resolve(URI.create("/_matrix/client/v3/account/whoami"))).toString();
         log.info("Who Am I URL: {}", whoamiUri);
         HttpGet whoAmIReq = new HttpGet(whoamiUri);
         whoAmIReq.addHeader("Authorization", "Bearer " + accessToken);

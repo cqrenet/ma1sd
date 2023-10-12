@@ -24,6 +24,6 @@ import io.kamax.mxisd.http.undertow.handler.BasicHttpHandler;
 
 public abstract class LoginHandler extends BasicHttpHandler {
 
-    public static final String Path = "/_matrix/client/r0/login";
+    public static final String Path = "/_matrix/client/v3/login";
 
 }
