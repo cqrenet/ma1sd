@@ -52,8 +52,8 @@ public class MatrixPath {
         return base().add("client");
     }
 
-    public static MatrixPath clientR0() {
-        return client().add("r0");
+    public static MatrixPath clientV3() {
+        return client().add("v3");
     }
 
     private StringBuilder path = new StringBuilder();

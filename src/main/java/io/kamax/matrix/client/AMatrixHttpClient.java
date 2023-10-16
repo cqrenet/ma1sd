@@ -375,13 +375,13 @@ public abstract class AMatrixHttpClient implements _MatrixClientRaw {
     }
 
     protected HttpUrl.Builder getClientPathBuilder(String... segments) {
-        String[] base = { "client", "r0" };
+        String[] base = { "client", "v3" };
         segments = ArrayUtils.addAll(base, segments);
         return getPathBuilder(segments);
     }
 
     protected HttpUrl.Builder getMediaPathBuilder(String... segments) {
-        String[] base = { "media", "r0" };
+        String[] base = { "media", "v3" };
         segments = ArrayUtils.addAll(base, segments);
         return getPathBuilder(segments);
     }
